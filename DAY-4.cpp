@@ -81,6 +81,7 @@ int main(){
 	 
 	Developer d=Developer("Daksh","Self",35,"C++");
 	d.FixBug();
+	d.AskforPromotion();
 	
 	return 0;
 }
