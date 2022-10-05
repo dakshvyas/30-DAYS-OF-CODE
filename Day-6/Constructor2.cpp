@@ -17,17 +17,18 @@ Employee(){ //Default Constructor
 //Copy Constructor
 Employee(Employee &c){
 a=c.a;
-b=c.b;
-cout<<a<<"\n"<<b;
-
+c.a=70;
+cout<<a;
+cout<<c.a;
 }
 
 
 };
 
 int main(){
-   Employee e1(10,20),e2(10),e3;
+   Employee e1(30,40),e2(50),e3;
    //Default Constructor and Copy Constructor
-   Employee e4(e1);
+   Employee e4(e2);
+   ;
     return 0;
 }

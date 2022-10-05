@@ -1,66 +1,28 @@
 
-//Operator Overloading of Unary operator
 #include<iostream>
 using namespace std;
-class Complex{
+class A {
 private:
-int a,b;
+int a;
 public:
-void set_data(int x,int y){
+void set_data(int x){
     a=x;
-    b=y;
 }
 void show_data(){
-    cout<<"A is "<<a<<" \nB is "<<b<<endl;
+    cout<<a<<endl;
 }
-Complex operator -(){
-    Complex t;
-    t.a=-a;
-    t.b=-b;
-return t;
-}
-};
-int main(){
-Complex c1,c2;
-c1.set_data(10,20);
-c2=-c1;
-c2.show_data();
-return 0;
-}
-
-
-//Operator overloading of Binary operator
-
-#include<iostream>
-using namespace std;
-class Complex{
-private:
-int x,y;
-public:
-void set_data(int a,int b){
-    x=a;
-    y=b;
-}
-void show_data(){
-    cout<<"A is "<<x<<"\nB is "<<y<<endl;
-
-}
-
-Complex operator *(Complex c){
-    Complex t;
-  t.x=x*c.x;
-  t.y=y*c.y;
-  return t;
-}
-
+A friend operator-(A);
 };
 
-int main(){
- Complex c1,c2,c3;
- c1.set_data(10,20);
- c2.set_data(20,30);
- c3=c1.operator*(c2);
- c3.show_data();
- return 0;
+A operator-(A a1){
+A temp;
+temp.a=-a1.a;
+return temp;
 }
-
+int main(){
+A a1,a2;
+a1.set_data(10);
+a2=-a1;
+a2.show_data();
+    return 0;
+}

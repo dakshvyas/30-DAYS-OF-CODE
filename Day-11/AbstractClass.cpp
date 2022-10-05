@@ -2,6 +2,7 @@
 //Abstract Class 
 #include<iostream>
 using namespace std;
+/*
 class Person {
 public:
 virtual void fun()=0;
@@ -20,7 +21,7 @@ p->fun();
 return 0;
 }
 
-
+*/
 //Template in C++
 template <class X,class Y > 
 X big(X a ,Y b){
@@ -30,6 +31,6 @@ X big(X a ,Y b){
     return b;
 }
 int main(){
-    cout<<big(4,5);
-    cout<<big(5.5,6.5);
+    cout<<big(5.5,5)<<" ";
+    cout<<big(5.5,6);
 }

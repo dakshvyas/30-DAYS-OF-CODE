@@ -16,7 +16,7 @@ return 0;
 
 
 //Fibonacci Series
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     int a=0,b=1;
@@ -31,3 +31,4 @@ b=next;
 }
     return 0;
 }
+*/

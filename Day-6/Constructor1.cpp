@@ -10,13 +10,15 @@ public:
     b=y;
   }
   void show_data(){
-  cout<<a,b;
+  cout<<a<<b;
   }
 Employee(){
-    cout<<a<<"is greater than"<<b;
+  cout<<a<<"is greater than "<<b<<endl;
 }
 };
 int main(){
-Employee e1,e2;
+Employee e1;
+e1.set_data(40,20);
+e1.show_data();
     return 0;
 }
