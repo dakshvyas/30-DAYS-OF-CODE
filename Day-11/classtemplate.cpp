@@ -22,14 +22,6 @@ void addElement(int index,X data){
     else
     cout<<"\n Array index is not valid";
 }
-void viewElement(int index,X &data)
-{
-    if (index>=0&&index<=p->capacity-1)
-        data=p->arr_ptr[index];
-    else 
-        cout<<"\n Array index is not valid";
-   
-}
 void ViewList(){
     int i;
     for(i=0;i<p->capacity;i++)
